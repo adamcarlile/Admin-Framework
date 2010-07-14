@@ -1,0 +1,283 @@
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.2.2
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ul {list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+abbr,acronym,a {border:0;}
+:focus{outline: none;}
+
+a
+{
+	color:#005670;
+}
+
+a:hover
+{
+	color:#098fb8;
+}
+
+body {
+	font-size: 62.5%;
+	color: #333333;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+header h1
+{
+	font-size:2.6em;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+header
+{
+	display:block;
+	background-color:#000000;
+	overflow:hidden;
+	position:relative;
+}
+
+header div.branding
+{
+	float:left;
+	padding:20px;
+}
+
+header p
+{
+	color:#cccccc;
+	font-size:1.6em;
+	font-style:italic;
+	padding-top:5px;
+}
+
+header nav
+{
+	float:right;
+	position:absolute;
+	bottom:0px;
+	right:20px;
+}
+
+header nav li
+{
+	float:left;
+	margin-right:10px;
+}
+
+header nav li a
+{
+	font-size:1.4em;
+	background-color:#cccccc;
+	color:#333333;
+	text-decoration:none;
+	display:block;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+header nav li span.on a
+{
+	background-color:#ffffff;
+}
+
+header div#login_info
+{
+	color:#ffffff;
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+ 
+header div#login_info a
+{
+	color:#ffffff;
+}
+
+div#body
+{
+	padding:20px;
+}
+
+div#body div.left
+{
+	float:left;
+	width:20%;
+	margin-right:20px;
+}
+
+div#body div.right
+{
+	float:left;
+	width:77%;
+}
+
+div.left ul
+{
+	border:1px solid;
+	border-top-color:#e4e4e4;
+	border-left-color:#e4e4e4;
+	border-right-color:#707070;
+	border-bottom-color:#707070;
+}
+
+div.left ul li a:hover
+{
+	background-image:url("/admin/backgrounds/small_dark_grey_grad_hover.png");
+	color:#ffffff;
+	text-shadow:1px 1px 0px #333333;
+}
+
+div.left ul li a
+{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#373535;
+	background-image:url("/admin/backgrounds/small_dark_grey_grad.png");
+	height:42px;
+	display:block;
+	line-height:42px;
+	padding-left:10px;
+	border-top:1px solid #f1f1f1;
+	border-bottom:1px solid #707070;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+div.left ul li:last-child a
+{
+	border-bottom:none;
+}
+
+div.left ul li.on a
+{
+	color:#eeeeee;
+	background-image:url("/admin/backgrounds/small_black_grad.png");
+	text-shadow:1px 1px 0px #000000;
+}
+
+div.right table
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	font-size:12px;
+	border:1px solid;
+	border-top-color:#e4e4e4;
+	border-left-color:#e4e4e4;
+	border-right-color:#ffffff;
+	border-bottom-color:#ffffff;
+}
+
+div.right table thead th
+{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#373535;
+	background-image:url("/admin/backgrounds/small_dark_grey_grad.png");
+	height:42px;
+	line-height:42px;
+	padding-left:10px;
+	text-shadow:1px 1px 0px #ffffff;
+	text-align:left;
+	border-right:1px solid #707070;
+	border-left:1px solid #e4e4e4;
+	border-bottom:1px solid #707070;
+}
+
+div.right table tbody tr td
+{
+	border-bottom:1px solid #e4e4e4;
+}
+
+div.right table tbody td
+{
+	font-size:16px;
+	height:42px;
+	line-height:42px;
+	padding-left:10px;
+	border-right:1px solid #e4e4e4;
+
+}
+
+div.right table tbody tr.questionable td
+{
+	background-color:#fffbea;
+}
+
+div.right table tbody tr.verified td
+{
+	background-color:#e6ecff;
+}
+
+div.right table tbody tr.acted_on td
+{
+	background-color:#e3ffdd;
+}
+
+div.right form.formtastic
+{
+	font-size:12px;
+}
+
+div.left h3.state
+{
+	border:1px solid;
+	background-color:#e4e4e4;
+	font-size:16px;
+	font-weight:bold;
+	line-height:42px;
+	height:42px;
+	padding-left:10px;
+	margin-top:20px;
+	color:#373535;
+	text-shadow:1px 1px 0px #ffffff;
+	background-image:url("/admin/backgrounds/small_dark_grey_grad.png");
+	background-position:bottom;
+	background-repeat:repeat-x;
+	border-top-color:#e4e4e4;
+	border-left-color:#e4e4e4;
+	border-right-color:#707070;
+	border-bottom-color:#707070;
+}
+
+div.right dl
+{
+	font-size:16px;
+}
+
+div.right dl dt
+{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#373535;
+	background-image:url("/admin/backgrounds/small_dark_grey_grad.png");
+	height:42px;
+	line-height:42px;
+	padding-left:10px;
+	text-shadow:1px 1px 0px #ffffff;
+	text-align:left;
+	border-right:1px solid #707070;
+	border-left:1px solid #e4e4e4;
+	border-bottom:1px solid #707070;	
+}
+
+div.right dl dd
+{
+	font-size:16px;
+	padding:10px;
+	border:1px solid #e4e4e4;
+	margin-bottom:20px;	
+}

@@ -1,0 +1,6 @@
+log/development.log
+log/production.log
+config/database.yml
+log/server.log
+log/test.log
+public/images/.DS_Store

@@ -1,0 +1,28 @@
+<% content_for :controls do %>
+	<ul>
+		<%= control_link(t('admin.views.users.index'), admin_users_path) %>
+		<%= control_link(t('admin.views.users.new'), new_admin_user_path) %>
+	</ul>
+<% end %>
+
+<table cellspacing="0">
+	<thead>
+		<tr>
+			<th>Email Address</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |user| %>
+		<tr>
+			<td>
+				<%= user.email %>
+			</td>
+			<td>
+				<%= link_to t('admin.views.users.edit'), edit_admin_user_path(params[:locale], user) %>&nbsp;
+				<%= link_to t('admin.views.users.delete'), admin_user_path(params[:locale], user), :method => :delete, :confirm => 'Are you sure?' %>
+			</td>
+		</tr>
+		<% end %>
+	</tbod>
+</table>

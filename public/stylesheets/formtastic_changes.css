@@ -1,0 +1,110 @@
+/* -------------------------------------------------------------------------------------------------
+
+Load this stylesheet after formtastic.css in your layouts to override the CSS to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+For example, to make the inline hint paragraphs a little darker in color than the standard #666:
+
+form.formtastic fieldset ol li p.inline-hints { color:#333; }
+
+--------------------------------------------------------------------------------------------------*/
+
+form.formtastic > fieldset 
+{
+	margin-bottom:20px;
+}
+
+form.formtastic > fieldset fieldset
+{
+	margin-bottom:10px;
+}
+
+form.formtastic > fieldset > legend
+{
+	font-size:1.4em;
+	font-family:"Rockwell";
+	font-weight:bold;
+	margin-left:10px;
+}
+
+form.formtastic li.radio fieldset ol
+{
+	padding:0px;
+	margin-top:30px;
+	width:100%;
+}
+
+form.formtastic fieldset li.radio fieldset ol li
+{
+	float:left;
+	padding-right:20px;
+	margin-right:10px !important;
+	color:#333333;
+	padding:5px;
+	padding-left:7px;
+	padding-right:7px;
+	display:block;
+	border:1px solid #cccccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+form.formtastic fieldset ol li.datetime fieldset legend span
+{
+	display:block;
+	width:150px;
+}
+
+form.formtastic fieldset.inputs
+{
+	border:1px solid #cccccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	overflow:hidden;
+}
+
+form.formtastic fieldset.inputs ol li.string input, form.formtastic fieldset.inputs ol li.password input
+{
+	width:50%;
+	border:1px solid #cccccc;
+	padding:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+form.formtastic fieldset.inputs ol li.text textarea
+{
+	border:1px solid #cccccc;
+	padding:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width:72%;
+}
+
+form.formtastic fieldset.inputs ol li.string input:focus, form.formtastic fieldset.inputs ol li.text textarea:focus
+{
+	border:1px solid #75BCF0;
+	-moz-box-shadow:0px 0px 2px #75BCF0;
+	-webkit-box-shadow:0px 0px 2px #75BCF0;
+	box-shadow:0px 0px 2px #75BCF0;
+}
+
+form.formtastic fieldset ol li.datetime ol
+{
+	margin-top:25px;
+}
+
+form.formtastic fieldset ol li.first
+{
+}
+
+form.formtastic > fieldset > ol > li.alt
+{
+	background-color:#e6e6e6;
+}
+
+form.formtastic > fieldset > ol > li
+{
+	padding:10px;
+	margin-bottom:0px;
+}
